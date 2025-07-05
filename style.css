@@ -1,0 +1,239 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefefe;
+    color: #333;
+    padding: 0 20px 40px;
+  }
+  
+  /* Top Navbar */
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+  }
+  
+  .logo span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #d35400;
+  }
+  
+  .login-btn {
+    background-color: #2980b9;
+    padding: 8px 18px;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-btn:hover {
+    background-color: #1f618d;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #fff5e6;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #d35400;
+  }
+  
+  .hero h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #7f8c8d;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f39c12;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #e67e22;
+  }
+  
+  .btn.primary {
+    background-color: #27ae60;
+  }
+  
+  .btn.primary:hover {
+    background-color: #219150;
+  }
+  
+  /* Menu Gallery */
+  .menu-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  /* Menu Card Row */
+  .menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.01);
+  }
+  
+  .menu-item img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Text beside image */
+  .menu-item-content {
+    flex: 1;
+  }
+  
+  .menu-item h4 {
+    font-size: 1.3rem;
+    color: #d35400;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .menu-item ul li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 4px;
+  }
+  
+  /* Buttons under content */
+  .item-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .item-buttons .btn {
+    flex: 1;
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+  
+  /* Responsive for small screens */
+  @media (max-width: 768px) {
+    .menu-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .menu-item img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .item-buttons {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+  
+
+  .OrderAgain {
+    text-align: center;
+    margin: 60px auto 0;
+    padding: 40px 40px;
+    background-color: #fef3e7;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1500px;
+  }
+  
+  .OrderAgain p {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    line-height: 1.6;
+    margin: 10px 0;
+    font-weight: 500;
+  }
+  
+  .OrderAgain p:first-child {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #d35400;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .menu-gallery img {
+      width: 90%;
+      height: auto;
+    }
+  
+    .btn {
+      width: 40%;
+    }
+  
+    .topbar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
