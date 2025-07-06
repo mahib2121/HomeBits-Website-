@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - HomeBit Kitchen</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="checkout-body">
+    <div class="checkout-container">
+        <!-- Left: Form -->
+        <div class="checkout-form">
+            <h2>Checkout</h2>
+            <form>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="e.g. 01XXXXXXXXX" required />
+
+                <label for="address">Delivery Address</label>
+                <textarea id="address" rows="4" placeholder="Enter your full delivery address..." required></textarea>
+
+                <label for="shipping">Shipping Method</label>
+                <select id="shipping" required>
+                    <option value="">Select a shipping method</option>
+                    <option value="home">Home Delivery (৳30)</option>
+                    <option value="pickup">Pickup from Store (Free)</option>
+                </select>
+
+                <label for="payment">Payment Method</label>
+                <select id="payment" required>
+                    <option value="">Choose payment gateway</option>
+                    <option value="bkash">bKash</option>
+                    <option value="nagad">Nagad</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select>
+
+                <button type="submit" class="btn primary">Confirm Order</button>
+            </form>
+        </div>
+
+        <!-- Right: Order Summary -->
+        <div class="checkout-summary">
+            <h3>Your Order</h3>
+            <div class="order-item">
+                <p><strong>Chicken Meal Combo</strong></p>
+                <p>৳220 × 1</p>
+            </div>
+
+            <div class="order-item">
+                <p><strong>Beef Meal Combo</strong></p>
+                <p>৳260 × 1</p>
+            </div>
+
+            <div class="order-item">
+                <p><strong>Beef Khichuri Box</strong></p>
+                <p>৳240 × 1</p>
+            </div>
+
+            <hr />
+            <div class="order-total">
+                <p><strong>Subtotal:</strong></p>
+                <p>৳720</p>
+            </div>
+            <div class="order-total">
+                <p><strong>Delivery:</strong></p>
+                <p>৳30</p>
+            </div>
+            <div class="order-total grand">
+                <p><strong>Total:</strong></p>
+                <p>৳750</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
