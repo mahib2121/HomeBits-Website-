@@ -15,40 +15,79 @@
   /* Top Navbar */
   .topbar {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between ;
     align-items: center;
-    padding: 15px 0;
+    padding: 5px 0;
     border-bottom: 2px solid #eee;
     margin-bottom: 20px;
   }
+  .nav_list{
+    margin-right: 100px;
+  }
   
+  /* animation on navbar <a> */
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #222;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 0%;
+  background: #007BFF;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+nav a:hover {
+  color: #007BFF;
+}
+
+nav a:hover::after {
+  width: 80%;
+  opacity: 1;
+}
+
+
+/* animation */
+
   .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+  
   }
   
   .logo img {
-    height: 100px;
-    width: 100px;
+    width: 70px;
     object-fit: contain;
+    margin-right: 5px;
+  
   }
   
   .logo span {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #d35400;
   }
   
   .login-btn {
     background-color: #2980b9;
-    padding: 8px 18px;
-    font-size: 0.95rem;
+    padding: 5px ;
+    font-size: 6px ;
     border: none;
-    border-radius: 6px;
+    border-radius:none;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
+
   }
   
   .login-btn:hover {
